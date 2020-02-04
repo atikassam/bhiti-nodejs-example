@@ -8,38 +8,27 @@ export class JobRouter {
 
     @HttpPost('/add')
     async addJob(req, res) {
-
-        res.json({
-            job: await this.job_innterface.addJob(req.body)
-        })
+        res.json(await this.job_innterface.addJob(req.body))
     }
 
     @HttpGet('/details/:id')
     async getJob(req, res) {
-        res.json({
-            job: await this.job_innterface.getJob(req.params.id)
-        })
+        res.json(await this.job_innterface.getJob(req.params.id))
     }
 
     @HttpGet('/list')
     async getJobs(req, res) {
-        res.json({
-            job: await this.job_innterface.getJobs()
-        })
+        res.json(await this.job_innterface.getJobs())
     }
 
 
-    @HttpPut('/')
+    @HttpPut('/:id')
     async updateJob(req, res) {
-        res.json({
-            job: await this.job_innterface.addJob(req.body)
-        })
+        res.json(await this.job_innterface.updateJob(req.params.id, req.body))
     }
 
     @HttpDelete('/:id')
     async deleteJob(req, res) {
-        res.json({
-            job: await this.job_innterface.addJob(req.params.id)
-        })
+        res.json(await this.job_innterface.deleteJob(req.params.id))
     }
 }

@@ -6,22 +6,22 @@ export class JobInterface {
     constructor(private job_service: JobService) {}
 
     addJob(job) {
-        return job
+        return this.job_service.addJob(job)
     }
 
     getJob(id) {
-        return id
+        return  this.job_service.getJob(id)
     }
 
     getJobs() {
-        return []
+        return this.job_service.getJobs()
     }
 
-    updateJob(id) {
-        return id
+    updateJob(id, update) {
+        return this.job_service.updateJob(id, update)
     }
 
     deleteJob(id) {
-        return id
+        return this.job_service.deleteJob(id)
     }
 }
