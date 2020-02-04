@@ -1,16 +1,14 @@
-# Gulp POC
+# Simple example of bhiti framework
 
-This is a simple gulp demonstration only...
 
 ##### Run:
 
 ```
 npm install
-npm run build
 npm start
 ```
 
-Next open http://localhost:8080 in your browser
+Next open http://localhost:8081 in your browser
 
 ##### Start watch 
 

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gulp build",
     "watch": "nodemon --exec 'ts-node' ./src/bin/index.ts",
-    "start": "node dest/application",
+    "start": "ts-node ./src/bin/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Atikur Rahman",
