@@ -1,5 +1,5 @@
 {
-  "name": "poc-gulp",
+  "name": "bhiti-example",
   "version": "1.0.0",
   "description": "\"A simple poc of gulp\"",
   "main": "index.js",
@@ -12,8 +12,9 @@
   "author": "Atikur Rahman",
   "license": "ISC",
   "dependencies": {
-    "@bhiti/core": "0.0.0-alpha.9",
-    "@bhiti/server": "^0.0.0-alpha.6",
+    "@bhiti/core": "^1.0.0-alpha.2",
+    "@bhiti/http": "^1.0.0-alpha.2",
+    "@bhiti/gql": "^1.0.0-alpha.2",
     "body-parser": "^1.19.0",
     "express": "^4.16.3",
     "ts-node": "^8.6.2"

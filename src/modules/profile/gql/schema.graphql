@@ -1,0 +1,10 @@
+type Profile {
+    name: String!
+    email: String!
+    number: String!
+}
+
+type Query {
+    profile: Profile
+    details: User
+}

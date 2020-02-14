@@ -1,4 +1,4 @@
-import {NsfServer} from "@bhiti/core";
+import { application } from "@bhiti/core";
 import {AppModule} from "../app.module";
 
-NsfServer.bootstrap(AppModule)
+application.bootstrap(AppModule)
